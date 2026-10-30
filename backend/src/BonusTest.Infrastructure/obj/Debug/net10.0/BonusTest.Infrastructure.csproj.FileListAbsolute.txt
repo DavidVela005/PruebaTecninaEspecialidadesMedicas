@@ -1,0 +1,20 @@
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\bin\Debug\net10.0\BonusTest.Infrastructure.deps.json
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\bin\Debug\net10.0\BonusTest.Infrastructure.dll
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\bin\Debug\net10.0\BonusTest.Infrastructure.pdb
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\bin\Debug\net10.0\BonusTest.Application.dll
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\bin\Debug\net10.0\BonusTest.Domain.dll
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\bin\Debug\net10.0\BonusTest.Application.pdb
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\bin\Debug\net10.0\BonusTest.Domain.pdb
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\BonusTest.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\BonusTest.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\BonusTest.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\BonusTest.Infrastructure.AssemblyInfo.cs
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\BonusTest.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\BonusTes.68F8560B.Up2Date
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\BonusTest.Infrastructure.dll
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\refint\BonusTest.Infrastructure.dll
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\BonusTest.Infrastructure.pdb
+C:\Users\david.vela\Downloads\Prueba Tecnica\backend\src\BonusTest.Infrastructure\obj\Debug\net10.0\ref\BonusTest.Infrastructure.dll
+C:\Users\david.vela\AppData\Local\Temp\claude\C--Users-david-vela-Downloads-Prueba-Tecnica\437534e9-039f-4c8a-a984-81db28308727\scratchpad\apibuild\BonusTest.Infrastructure.deps.json
+C:\Users\david.vela\AppData\Local\Temp\claude\C--Users-david-vela-Downloads-Prueba-Tecnica\437534e9-039f-4c8a-a984-81db28308727\scratchpad\apibuild\BonusTest.Infrastructure.dll
+C:\Users\david.vela\AppData\Local\Temp\claude\C--Users-david-vela-Downloads-Prueba-Tecnica\437534e9-039f-4c8a-a984-81db28308727\scratchpad\apibuild\BonusTest.Infrastructure.pdb

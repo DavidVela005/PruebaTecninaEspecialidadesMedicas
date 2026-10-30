@@ -1,0 +1,173 @@
+[
+  {
+    "ContainingType": "BonusTest.Api.Controllers.BonusController",
+    "Method": "GetPaged",
+    "RelativePath": "api/v1/Bonus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DepartmentCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmployeeNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Period",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StateCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BonusTest.Api.Controllers.BonusController",
+    "Method": "Register",
+    "RelativePath": "api/v1/Bonus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BonusTest.Application.Bonuses.CreateBonusRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "UserCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BonusTest.Api.Controllers.BonusController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Bonus/{bonusId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bonusId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "UserCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BonusTest.Api.Controllers.BonusController",
+    "Method": "Cancel",
+    "RelativePath": "api/v1/Bonus/{bonusId}/cancel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bonusId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "UserCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BonusTest.Api.Controllers.BonusController",
+    "Method": "GetEmployee",
+    "RelativePath": "api/v1/Bonus/employee/{departmentCode}/{employeeNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "employeeNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BonusTest.Api.Controllers.CatalogController",
+    "Method": "GetBonusReasons",
+    "RelativePath": "api/v1/Catalog/bonus-reasons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BonusTest.Api.Controllers.CatalogController",
+    "Method": "GetBonusTypes",
+    "RelativePath": "api/v1/Catalog/bonus-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BonusTest.Api.Controllers.CatalogController",
+    "Method": "GetDepartments",
+    "RelativePath": "api/v1/Catalog/departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BonusTest.Api.Controllers.CatalogController",
+    "Method": "GetStates",
+    "RelativePath": "api/v1/Catalog/states/{masterStateCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "masterStateCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,134 @@
+<section class="card">
+  <header class="card-header">
+    <h2>Bonos de desempeño</h2>
+    <button type="button" class="btn btn-primary" (click)="showForm.set(true)">Nuevo registro</button>
+  </header>
+
+  <form class="filters" [formGroup]="filterForm" (ngSubmit)="search()">
+    <label>
+      Área
+      <select formControlName="departmentCode">
+        <option value="">Todas</option>
+        @for (department of departments(); track department.departmentCode) {
+          <option [value]="department.departmentCode">{{ department.departmentName }}</option>
+        }
+      </select>
+    </label>
+
+    <label>
+      Número de empleado
+      <input type="number" min="1" formControlName="employeeNumber" />
+    </label>
+
+    <label>
+      Periodo
+      <input type="month" formControlName="period" />
+    </label>
+
+    <label>
+      Estado
+      <select formControlName="stateCode">
+        <option value="">Todos</option>
+        @for (state of bonusStates(); track state.stateCode) {
+          <option [value]="state.stateCode">{{ state.stateDescription }}</option>
+        }
+      </select>
+    </label>
+
+    <div class="filter-actions">
+      <button type="submit" class="btn btn-primary">Buscar</button>
+      <button type="button" class="btn" (click)="clear()">Limpiar</button>
+    </div>
+  </form>
+
+  <div class="table-wrapper" [class.loading]="loading()">
+    <table>
+      <thead>
+        <tr>
+          <th>Acciones</th>
+          <th>Estado</th>
+          <th>Periodo</th>
+          <th>Área</th>
+          <th>N.º empleado</th>
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th class="num">Monto / %</th>
+          <th>Motivo</th>
+          <th class="num">Bruto</th>
+          <th class="num">Retención</th>
+          <th class="num">Neto</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (bonus of page()?.data; track bonus.bonusId) {
+          <tr>
+            <td class="actions">
+              <button type="button" class="btn btn-sm" [disabled]="!canAct(bonus)" (click)="askConfirmation('cancel', bonus)">
+                Anular
+              </button>
+              <button type="button" class="btn btn-sm btn-danger" [disabled]="!canAct(bonus)" (click)="askConfirmation('delete', bonus)">
+                Eliminar
+              </button>
+            </td>
+            <td><span class="badge" [class]="'badge state-' + bonus.stateCode">{{ bonus.stateDescription }}</span></td>
+            <td>{{ bonus.period }}</td>
+            <td>{{ bonus.departmentName }}</td>
+            <td>{{ bonus.employeeNumber }}</td>
+            <td>{{ bonus.fullName }}</td>
+            <td>{{ bonus.bonusTypeDescription }}</td>
+            <td class="num">
+              {{ bonus.bonusValue | number: '1.2-2' }}{{ bonus.bonusTypeId === BonusTypes.SalaryPercentage ? ' %' : '' }}
+            </td>
+            <td>{{ bonus.reasonDescription }}</td>
+            <td class="num">{{ bonus.grossAmount | number: '1.2-2' }}</td>
+            <td class="num">{{ bonus.taxAmount | number: '1.2-2' }}</td>
+            <td class="num">{{ bonus.netAmount | number: '1.2-2' }}</td>
+          </tr>
+        } @empty {
+          <tr>
+            <td colspan="12" class="empty">{{ loading() ? 'Cargando…' : 'No se encontraron bonos.' }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  @if (page(); as page) {
+    <footer class="pagination">
+      <span>Total: {{ page.totalRecords }} registros</span>
+      @if (page.totalPages > 1) {
+        <nav aria-label="Paginación">
+          <button type="button" class="btn btn-sm" [disabled]="page.pageNumber === 1" (click)="goToPage(1)">«</button>
+          <button type="button" class="btn btn-sm" [disabled]="page.pageNumber === 1" (click)="goToPage(page.pageNumber - 1)">‹</button>
+          @for (number of pageNumbers(); track number) {
+            <button
+              type="button"
+              class="btn btn-sm"
+              [class.btn-primary]="number === page.pageNumber"
+              [attr.aria-current]="number === page.pageNumber ? 'page' : null"
+              (click)="goToPage(number)"
+            >
+              {{ number }}
+            </button>
+          }
+          <button type="button" class="btn btn-sm" [disabled]="page.pageNumber === page.totalPages" (click)="goToPage(page.pageNumber + 1)">›</button>
+          <button type="button" class="btn btn-sm" [disabled]="page.pageNumber === page.totalPages" (click)="goToPage(page.totalPages)">»</button>
+        </nav>
+      }
+    </footer>
+  }
+</section>
+
+@if (showForm()) {
+  <app-bonus-form [departments]="departments()" (saved)="onSaved()" (closed)="showForm.set(false)" />
+}
+
+@if (pendingText(); as text) {
+  <app-confirm-dialog
+    [title]="text.title"
+    [message]="text.message"
+    [confirmLabel]="text.confirm"
+    (confirmed)="confirmAction()"
+    (cancelled)="pending.set(null)"
+  />
+}

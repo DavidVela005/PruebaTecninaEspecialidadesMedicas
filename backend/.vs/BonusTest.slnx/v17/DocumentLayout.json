@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\david.vela\\Downloads\\Prueba Tecnica\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69C2BDBE-3D1B-22B6-6CD2-7BBE4275DCEB}|src\\BonusTest.Application\\BonusTest.Application.csproj|c:\\users\\david.vela\\downloads\\prueba tecnica\\backend\\src\\bonustest.application\\bonuses\\bonusdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69C2BDBE-3D1B-22B6-6CD2-7BBE4275DCEB}|src\\BonusTest.Application\\BonusTest.Application.csproj|solutionrelative:src\\bonustest.application\\bonuses\\bonusdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69C2BDBE-3D1B-22B6-6CD2-7BBE4275DCEB}|src\\BonusTest.Application\\BonusTest.Application.csproj|c:\\users\\david.vela\\downloads\\prueba tecnica\\backend\\src\\bonustest.application\\bonuses\\ibonusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69C2BDBE-3D1B-22B6-6CD2-7BBE4275DCEB}|src\\BonusTest.Application\\BonusTest.Application.csproj|solutionrelative:src\\bonustest.application\\bonuses\\ibonusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6183AA0-9493-2216-588B-D8DBA9ADB9AD}|src\\BonusTest.Api\\BonusTest.Api.csproj|c:\\users\\david.vela\\downloads\\prueba tecnica\\backend\\src\\bonustest.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6183AA0-9493-2216-588B-D8DBA9ADB9AD}|src\\BonusTest.Api\\BonusTest.Api.csproj|solutionrelative:src\\bonustest.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BonusDtos.cs",
+              "DocumentMoniker": "C:\\Users\\david.vela\\Downloads\\Prueba Tecnica\\backend\\src\\BonusTest.Application\\Bonuses\\BonusDtos.cs",
+              "RelativeDocumentMoniker": "src\\BonusTest.Application\\Bonuses\\BonusDtos.cs",
+              "ToolTip": "C:\\Users\\david.vela\\Downloads\\Prueba Tecnica\\backend\\src\\BonusTest.Application\\Bonuses\\BonusDtos.cs",
+              "RelativeToolTip": "src\\BonusTest.Application\\Bonuses\\BonusDtos.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwBcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T19:16:51.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IBonusRepository.cs",
+              "DocumentMoniker": "C:\\Users\\david.vela\\Downloads\\Prueba Tecnica\\backend\\src\\BonusTest.Application\\Bonuses\\IBonusRepository.cs",
+              "RelativeDocumentMoniker": "src\\BonusTest.Application\\Bonuses\\IBonusRepository.cs",
+              "ToolTip": "C:\\Users\\david.vela\\Downloads\\Prueba Tecnica\\backend\\src\\BonusTest.Application\\Bonuses\\IBonusRepository.cs",
+              "RelativeToolTip": "src\\BonusTest.Application\\Bonuses\\IBonusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T19:16:20.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\david.vela\\Downloads\\Prueba Tecnica\\backend\\src\\BonusTest.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\BonusTest.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\david.vela\\Downloads\\Prueba Tecnica\\backend\\src\\BonusTest.Api\\Program.cs",
+              "RelativeToolTip": "src\\BonusTest.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T19:00:29.415Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

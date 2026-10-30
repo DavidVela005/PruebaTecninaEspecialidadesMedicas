@@ -1,0 +1,76 @@
+.search,
+.bonus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.search {
+  margin-bottom: 16px;
+}
+
+.search .btn {
+  align-self: end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+select,
+input {
+  width: 100%;
+}
+
+.field-error {
+  color: #b42318;
+  font-size: 0.8rem;
+}
+
+.employee {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 12px 16px;
+  background: var(--background);
+  border-radius: 6px;
+}
+
+.employee dt {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.employee dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.preview {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+  padding: 12px 16px;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+}
+
+.preview div {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.preview strong {
+  font-size: 1.1rem;
+}

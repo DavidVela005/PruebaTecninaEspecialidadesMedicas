@@ -1,0 +1,12 @@
+<div class="modal-backdrop" (click)="cancelled.emit()">
+  <div class="modal modal-sm" role="alertdialog" aria-modal="true" aria-labelledby="confirm-title" (click)="$event.stopPropagation()">
+    <header class="modal-header">
+      <h3 id="confirm-title">{{ title() }}</h3>
+    </header>
+    <div class="modal-body">{{ message() }}</div>
+    <footer class="modal-footer">
+      <button type="button" class="btn" (click)="cancelled.emit()">Cancelar</button>
+      <button type="button" class="btn btn-danger" (click)="confirmed.emit()">{{ confirmLabel() }}</button>
+    </footer>
+  </div>
+</div>
